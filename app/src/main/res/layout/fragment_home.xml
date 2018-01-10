@@ -1,10 +1,58 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="layout.home">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.info.himachal.Drawer"
+        tools:showIn="@layout/app_bar_drawer"
+        android:background="@color/abc">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
-    <!-- TODO: Update blank fragment layout -->
 
-</FrameLayout>
+                <TextView
+                    android:id="@+id/textView5"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="35dp"
+                    android:textColor="@color/bgcolor"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="270dp"
+                    app:srcCompat="@drawable/ka"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView2"
+                    android:text="Kangra is the most populous district the Indian state of Himachal Pradesh, India.
+         Dharamshala is the administrative headquarters of the district. It is home of Masroor Rock Cut Temple, also known as Himalayan Pyramids and wonder of the world for being likely contender for the UNESCO World Heritage Site. Hindu genealogy registers at Jawalamukhi, Himachal Pradesh are kept here at Jawalamukhi."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+

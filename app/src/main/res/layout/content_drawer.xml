@@ -6,55 +6,13 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.info.himachal.Drawer"
-    tools:showIn="@layout/app_bar_drawer"
-    android:background="@color/abc">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+    tools:showIn="@layout/app_bar_drawer">
 
 
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/farm">
 
-
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="62dp"
-        android:textColor="@color/bgcolor"
-        android:textSize="50dp"
-        android:text="Kangra Tourism"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="270dp"
-        app:srcCompat="@drawable/ka"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/bgcolor"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView2"
-        android:text="Kangra is the most populous[1] district of
-        the Indian state of Himachal Pradesh, India.
-         Dharamshala is the administrative headquarters of the district.
-         It is home of Masroor Rock Cut Temple, also known as Himalayan Pyramids and wonder of the world for being likely contender for the UNESCO World Heritage Site.
-         Hindu genealogy registers at Jawalamukhi, Himachal Pradesh are kept here at Jawalamukhi.
-         Kangra is known for having the oldest serving Royal Dynasty in the world Katoch.[citation needed] Kangra became a district of British India in 1846, when it was ceded to British India at the conclusion of the First Anglo-Sikh War. The British district included the present-day districts of Kangra, Hamirpur, Kullu, and Lahul and Spiti. Kangra District was part of the British province of Punjab. The administrative headquarters of the district were initially at Kangra, but were moved to Dharamshala in 1855."
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-        </LinearLayout>
-    </ScrollView>
+</FrameLayout>
 </RelativeLayout>

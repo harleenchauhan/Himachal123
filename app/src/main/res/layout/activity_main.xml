@@ -8,6 +8,10 @@
     tools:context="com.info.himachal.MainActivity"
     android:background="@color/bgcolor">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_blank"></FrameLayout>
 
     <GridView
         android:id="@+id/grid"
